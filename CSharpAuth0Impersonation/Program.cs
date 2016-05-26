@@ -12,13 +12,13 @@ namespace CSharpAuth0Impersonation
     {
         static void Main(string[] args)
         {
-            var domain = "vjayaram.au.auth0.com";
-            var globalClientId = "oXP14y4oJP6rlKYShx2WlJO6pEw1fLXr";
-            var globalClientSecret = "rKPbr5Petl3sPe3aY3EMRDp4mI9jM4fSk-0lTPaa2YPYjuvrED6_L5rnNK8J31g5";
+            var domain = "YOUR_DOMAIN.au.auth0.com";
+            var globalClientId = "YOUR_GLOBAL_CLIENT_ID";
+            var globalClientSecret = "YOUR_GLOBAL_CLIENT_SECRET";
 
-            var impersonatorId = "auth0|56ce383580ef393b7c76387f";
-            var targetUserId = "auth0|56ccc6faab485b8749f3adc0";
-            var targetClientId = "S2iThBUtkas0ZqHNwfRK2pUUsRAsVXmf";
+            var impersonatorId = "USER_ID_OF_THE_IMPERSONATOR";
+            var targetUserId = "USER_ID_OF_THE_USER_YOU_ARE_TRYING_TO_IMPERSONATE";
+            var targetClientId = "CLIENT_ID_OF_THE_APPLICATION_YOU_WANT_TO_LOGIN_TO";
             var callbackUrl = "http://localhost:3000/callback";
             var impersonationLinkLifetime = 30; // seconds 
 
